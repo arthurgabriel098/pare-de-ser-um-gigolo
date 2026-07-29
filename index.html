@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Novo Começo</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f7fbff;
+    color:#1f2937;
+}
+
+header{
+    background:white;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:100;
+}
+
+nav{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#0b63ce;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:35px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#333;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#0b63ce;
+}
+
+.hero{
+    margin-top:90px;
+    min-height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(135deg,#ffffff,#dcebff);
+    padding:40px;
+}
+
+.hero-content{
+    max-width:850px;
+}
+
+.hero h1{
+    font-size:58px;
+    color:#0b63ce;
+    margin-bottom:25px;
+}
+
+.hero p{
+    font-size:22px;
+    line-height:1.6;
+    margin-bottom:40px;
+}
+
+.botao{
+    background:#0b63ce;
+    color:white;
+    padding:18px 42px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:19px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.botao:hover{
+    background:#084fa7;
+    transform:translateY(-3px);
+}
+
+section{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:90px 0;
+}
+
+h2{
+    text-align:center;
+    color:#0b63ce;
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    padding:35px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#0b63ce;
+    margin-bottom:15px;
+}
+
+.card p{
+    line-height:1.7;
+}
+
+.passos{
+    display:grid;
+    gap:25px;
+}
+
+.passo{
+    background:white;
+    padding:30px;
+    border-left:8px solid #0b63ce;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+    border-radius:10px;
+}
+
+footer{
+    background:#0b63ce;
+    color:white;
+    text-align:center;
+    padding:40px;
+    margin-top:70px;
+}
+
+@media(max-width:800px){
+
+.hero h1{
+font-size:38px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+nav{
+flex-direction:column;
+gap:15px;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<header>
+
+<nav>
+
+<div class="logo">Novo Começo</div>
+
+<ul>
+<li><a href="#sobre">Sobre</a></li>
+<li><a href="#vantagens">Vantagens</a></li>
+<li><a href="#como">Como funciona</a></li>
+</ul>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Pare de ser gigolô.<br>Ache seu novo emprego aqui.</h1>
+
+<p>
+Todo mundo merece uma oportunidade para construir uma carreira sólida.
+Encontre vagas, empresas e novas possibilidades para transformar sua vida profissional.
+</p>
+
+<button class="botao" onclick="window.open('https://www.linkedin.com/jobs/','_blank')">
+Encontrar Empregos
+</button>
+
+</div>
+
+</section>
+
+<section id="sobre">
+
+<h2>Por que este site existe?</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Nova oportunidade</h3>
+<p>
+O mercado de trabalho oferece inúmeras oportunidades para quem deseja iniciar ou mudar de carreira. Nosso objetivo é facilitar esse caminho.
+</p>
+</div>
+
+<div class="card">
+<h3>Profissionalismo</h3>
+<p>
+Acreditamos que um emprego pode proporcionar crescimento, estabilidade financeira e desenvolvimento pessoal.
+</p>
+</div>
+
+<div class="card">
+<h3>Fácil acesso</h3>
+<p>
+Com apenas um clique você é direcionado para uma plataforma confiável com milhares de vagas disponíveis.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="vantagens">
+
+<h2>Vantagens</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Milhares de vagas</h3>
+<p>Empresas contratando diariamente.</p>
+</div>
+
+<div class="card">
+<h3>Carreira</h3>
+<p>Construa um futuro profissional consistente.</p>
+</div>
+
+<div class="card">
+<h3>Segurança</h3>
+<p>Procure oportunidades em plataformas reconhecidas.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="como">
+
+<h2>Como funciona?</h2>
+
+<div class="passos">
+
+<div class="passo">
+<h3>1. Clique no botão</h3>
+<p>Você será levado para uma plataforma de empregos.</p>
+</div>
+
+<div class="passo">
+<h3>2. Pesquise vagas</h3>
+<p>Filtre por cidade, cargo ou empresa.</p>
+</div>
+
+<div class="passo">
+<h3>3. Candidate-se</h3>
+<p>Envie seu currículo e acompanhe as oportunidades disponíveis.</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>Novo Começo</h3>
+
+<p>
+Incentivando novas oportunidades profissionais.
+</p>
+
+<p style="margin-top:15px;">
+© 2026 Todos os direitos reservados.
+</p>
+
+</footer>
+
+</body>
+</html>
