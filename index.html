@@ -1,229 +1,253 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Novo Começo</title>
+<title>Novo Começo | Encontre seu próximo emprego</title>
 
-<style>
+<link rel="stylesheet" href="style.css">
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
-}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-body{
-    background:#f7fbff;
-    color:#1f2937;
-}
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-header{
-    background:white;
-    box-shadow:0 2px 10px rgba(0,0,0,.08);
-    position:fixed;
-    width:100%;
-    top:0;
-    z-index:100;
-}
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
 
-nav{
-    width:90%;
-    max-width:1200px;
-    margin:auto;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px;
-}
-
-.logo{
-    font-size:28px;
-    font-weight:bold;
-    color:#0b63ce;
-}
-
-nav ul{
-    display:flex;
-    list-style:none;
-    gap:35px;
-}
-
-nav a{
-    text-decoration:none;
-    color:#333;
-    font-weight:bold;
-    transition:.3s;
-}
-
-nav a:hover{
-    color:#0b63ce;
-}
-
-.hero{
-    margin-top:90px;
-    min-height:90vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    background:linear-gradient(135deg,#ffffff,#dcebff);
-    padding:40px;
-}
-
-.hero-content{
-    max-width:850px;
-}
-
-.hero h1{
-    font-size:58px;
-    color:#0b63ce;
-    margin-bottom:25px;
-}
-
-.hero p{
-    font-size:22px;
-    line-height:1.6;
-    margin-bottom:40px;
-}
-
-.botao{
-    background:#0b63ce;
-    color:white;
-    padding:18px 42px;
-    border:none;
-    border-radius:10px;
-    cursor:pointer;
-    font-size:19px;
-    font-weight:bold;
-    transition:.3s;
-}
-
-.botao:hover{
-    background:#084fa7;
-    transform:translateY(-3px);
-}
-
-section{
-    width:90%;
-    max-width:1200px;
-    margin:auto;
-    padding:90px 0;
-}
-
-h2{
-    text-align:center;
-    color:#0b63ce;
-    font-size:40px;
-    margin-bottom:40px;
-}
-
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:30px;
-}
-
-.card{
-    background:white;
-    border-radius:15px;
-    padding:35px;
-    box-shadow:0 5px 20px rgba(0,0,0,.08);
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-8px);
-}
-
-.card h3{
-    color:#0b63ce;
-    margin-bottom:15px;
-}
-
-.card p{
-    line-height:1.7;
-}
-
-.passos{
-    display:grid;
-    gap:25px;
-}
-
-.passo{
-    background:white;
-    padding:30px;
-    border-left:8px solid #0b63ce;
-    box-shadow:0 4px 15px rgba(0,0,0,.08);
-    border-radius:10px;
-}
-
-footer{
-    background:#0b63ce;
-    color:white;
-    text-align:center;
-    padding:40px;
-    margin-top:70px;
-}
-
-@media(max-width:800px){
-
-.hero h1{
-font-size:38px;
-}
-
-.hero p{
-font-size:18px;
-}
-
-nav{
-flex-direction:column;
-gap:15px;
-}
-
-nav ul{
-flex-wrap:wrap;
-justify-content:center;
-}
-
-}
-
-</style>
 </head>
+
 <body>
 
-<header>
+<div class="background">
+
+<div class="blob blob1"></div>
+<div class="blob blob2"></div>
+<div class="blob blob3"></div>
+
+</div>
+
+<header id="header">
+
+<div class="container">
+
+<a href="#" class="logo">
+
+<div class="logo-icon">
+<i class="fa-solid fa-briefcase"></i>
+</div>
+
+<div class="logo-text">
+
+<h2>Novo Começo</h2>
+
+<span>Careers</span>
+
+</div>
+
+</a>
 
 <nav>
 
-<div class="logo">Novo Começo</div>
+<a href="#inicio">Início</a>
 
-<ul>
-<li><a href="#sobre">Sobre</a></li>
-<li><a href="#vantagens">Vantagens</a></li>
-<li><a href="#como">Como funciona</a></li>
-</ul>
+<a href="#sobre">Sobre</a>
+
+<a href="#vantagens">Vantagens</a>
+
+<a href="#estatisticas">Resultados</a>
+
+<a href="#faq">FAQ</a>
 
 </nav>
 
+<a
+href="https://www.linkedin.com/jobs/"
+target="_blank"
+class="header-button">
+
+Encontrar vagas
+
+</a>
+
+<div class="menu-mobile">
+
+<i class="fa-solid fa-bars"></i>
+
+</div>
+
+</div>
+
 </header>
 
-<section class="hero">
+<section id="inicio" class="hero">
 
-<div class="hero-content">
+<div class="container hero-container">
 
-<h1>Pare de ser gigolô.<br>Ache seu novo emprego aqui.</h1>
+<div class="hero-left">
+
+<span class="tag">
+
+<i class="fa-solid fa-circle-check"></i>
+
+Mais de 1 milhão de oportunidades disponíveis
+
+</span>
+
+<h1>
+
+Pare de ser gigolô.
+
+<br>
+
+<span>
+
+Ache seu novo emprego aqui.
+
+</span>
+
+</h1>
 
 <p>
-Todo mundo merece uma oportunidade para construir uma carreira sólida.
-Encontre vagas, empresas e novas possibilidades para transformar sua vida profissional.
+
+Construa uma carreira sólida, encontre empresas de destaque e dê o próximo passo rumo ao seu futuro profissional.
+
+Tudo isso em poucos cliques.
+
 </p>
 
-<button class="botao" onclick="window.open('https://www.linkedin.com/jobs/','_blank')">
-Encontrar Empregos
-</button>
+<div class="hero-buttons">
+
+<a
+href="https://www.linkedin.com/jobs/"
+target="_blank"
+class="primary-button">
+
+Começar agora
+
+<i class="fa-solid fa-arrow-right"></i>
+
+</a>
+
+<a href="#sobre" class="secondary-button">
+
+Saiba mais
+
+</a>
+
+</div>
+
+<div class="hero-info">
+
+<div>
+
+<h3 class="counter" data-target="1000000">0</h3>
+
+<p>Vagas</p>
+
+</div>
+
+<div>
+
+<h3 class="counter" data-target="50000">0</h3>
+
+<p>Empresas</p>
+
+</div>
+
+<div>
+
+<h3 class="counter" data-target="98">0</h3>
+
+<p>Satisfação</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="hero-right">
+
+<div class="glass-card">
+
+<div class="card-top">
+
+<div class="avatar">
+
+<i class="fa-solid fa-user-tie"></i>
+
+</div>
+
+<div>
+
+<h3>Nova oportunidade</h3>
+
+<p>Comece sua carreira hoje.</p>
+
+</div>
+
+</div>
+
+<div class="card-line"></div>
+
+<div class="job">
+
+<div>
+
+<h4>Desenvolvedor Front-end</h4>
+
+<span>Remoto</span>
+
+</div>
+
+<i class="fa-solid fa-laptop-code"></i>
+
+</div>
+
+<div class="job">
+
+<div>
+
+<h4>Analista Financeiro</h4>
+
+<span>Híbrido</span>
+
+</div>
+
+<i class="fa-solid fa-chart-line"></i>
+
+</div>
+
+<div class="job">
+
+<div>
+
+<h4>Engenheiro de Software</h4>
+
+<span>Tempo integral</span>
+
+</div>
+
+<i class="fa-solid fa-code"></i>
+
+</div>
+
+<a
+href="https://www.linkedin.com/jobs/"
+target="_blank"
+class="glass-button">
+
+Ver todas as vagas
+
+</a>
+
+</div>
+
+</div>
 
 </div>
 
@@ -231,79 +255,364 @@ Encontrar Empregos
 
 <section id="sobre">
 
-<h2>Por que este site existe?</h2>
+<div class="container">
 
-<div class="cards">
+<div class="section-title">
 
-<div class="card">
-<h3>Nova oportunidade</h3>
+<span>Sobre</span>
+
+<h2>
+
+Por que criamos este projeto?
+
+</h2>
+
 <p>
-O mercado de trabalho oferece inúmeras oportunidades para quem deseja iniciar ou mudar de carreira. Nosso objetivo é facilitar esse caminho.
+
+Nosso objetivo é incentivar pessoas a encontrarem uma carreira, desenvolverem novas habilidades e conquistarem estabilidade profissional.
+
 </p>
+
 </div>
 
-<div class="card">
-<h3>Profissionalismo</h3>
+<div class="features">
+
+<div class="feature-card">
+
+<div class="feature-icon">
+
+<i class="fa-solid fa-compass"></i>
+
+</div>
+
+<h3>Direção</h3>
+
 <p>
-Acreditamos que um emprego pode proporcionar crescimento, estabilidade financeira e desenvolvimento pessoal.
+
+Encontre oportunidades alinhadas ao seu perfil.
+
 </p>
-</div>
-
-<div class="card">
-<h3>Fácil acesso</h3>
-<p>
-Com apenas um clique você é direcionado para uma plataforma confiável com milhares de vagas disponíveis.
-</p>
-</div>
 
 </div>
 
-</section>
+<div class="feature-card">
 
-<section id="vantagens">
+<div class="feature-icon">
 
-<h2>Vantagens</h2>
+<i class="fa-solid fa-shield-halved"></i>
 
-<div class="cards">
-
-<div class="card">
-<h3>Milhares de vagas</h3>
-<p>Empresas contratando diariamente.</p>
 </div>
 
-<div class="card">
-<h3>Carreira</h3>
-<p>Construa um futuro profissional consistente.</p>
-</div>
-
-<div class="card">
 <h3>Segurança</h3>
-<p>Procure oportunidades em plataformas reconhecidas.</p>
+
+<p>
+
+Acesso rápido às maiores plataformas de emprego.
+
+</p>
+
+</div>
+
+<div class="feature-card">
+
+<div class="feature-icon">
+
+<i class="fa-solid fa-bolt"></i>
+
+</div>
+
+<h3>Rapidez</h3>
+
+<p>
+
+Com poucos cliques você já estará procurando vagas.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section><section id="vantagens">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>Vantagens</span>
+
+<h2>
+Tudo o que você precisa para dar o próximo passo
+</h2>
+
+<p>
+Reunimos ferramentas e recursos para facilitar sua busca por oportunidades e tornar sua jornada profissional mais eficiente.
+</p>
+
+</div>
+
+<div class="advantages-grid">
+
+<div class="advantage-card">
+<i class="fa-solid fa-magnifying-glass"></i>
+<h3>Pesquisa Inteligente</h3>
+<p>Encontre vagas por cargo, empresa, cidade ou modalidade de trabalho.</p>
+</div>
+
+<div class="advantage-card">
+<i class="fa-solid fa-user-check"></i>
+<h3>Perfil Profissional</h3>
+<p>Destaque suas competências e aumente suas chances de contratação.</p>
+</div>
+
+<div class="advantage-card">
+<i class="fa-solid fa-earth-americas"></i>
+<h3>Oportunidades Globais</h3>
+<p>Explore vagas presenciais, híbridas e remotas em diversas regiões.</p>
+</div>
+
+<div class="advantage-card">
+<i class="fa-solid fa-rocket"></i>
+<h3>Crescimento</h3>
+<p>Invista em uma carreira que permita evolução constante.</p>
+</div>
+
+<div class="advantage-card">
+<i class="fa-solid fa-clock"></i>
+<h3>Economia de Tempo</h3>
+<p>Centralize sua busca em uma plataforma simples e rápida.</p>
+</div>
+
+<div class="advantage-card">
+<i class="fa-solid fa-handshake"></i>
+<h3>Conexões</h3>
+<p>Aproxime-se de empresas e recrutadores em poucos cliques.</p>
+</div>
+
 </div>
 
 </div>
 
 </section>
 
-<section id="como">
+<section id="estatisticas">
 
-<h2>Como funciona?</h2>
+<div class="container">
 
-<div class="passos">
+<div class="section-title">
 
-<div class="passo">
-<h3>1. Clique no botão</h3>
-<p>Você será levado para uma plataforma de empregos.</p>
+<span>Números</span>
+
+<h2>Resultados que inspiram confiança</h2>
+
+<p>
+Milhares de profissionais encontram novas oportunidades todos os dias.
+</p>
+
 </div>
 
-<div class="passo">
-<h3>2. Pesquise vagas</h3>
-<p>Filtre por cidade, cargo ou empresa.</p>
+<div class="stats">
+
+<div class="stat-card">
+<h3 class="counter" data-target="1200">0</h3>
+<p>Novas vagas por dia</p>
 </div>
 
-<div class="passo">
-<h3>3. Candidate-se</h3>
-<p>Envie seu currículo e acompanhe as oportunidades disponíveis.</p>
+<div class="stat-card">
+<h3 class="counter" data-target="320">0</h3>
+<p>Empresas parceiras</p>
+</div>
+
+<div class="stat-card">
+<h3 class="counter" data-target="98">0</h3>
+<p>% de satisfação</p>
+</div>
+
+<div class="stat-card">
+<h3 class="counter" data-target="45">0</h3>
+<p>Áreas profissionais</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="timeline">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>Como funciona</span>
+
+<h2>Comece em apenas três passos</h2>
+
+</div>
+
+<div class="timeline-items">
+
+<div class="timeline-card">
+
+<div class="number">01</div>
+
+<h3>Escolha uma vaga</h3>
+
+<p>
+Pesquise oportunidades compatíveis com seu perfil.
+</p>
+
+</div>
+
+<div class="timeline-card">
+
+<div class="number">02</div>
+
+<h3>Envie seu currículo</h3>
+
+<p>
+Candidate-se rapidamente utilizando a plataforma escolhida.
+</p>
+
+</div>
+
+<div class="timeline-card">
+
+<div class="number">03</div>
+
+<h3>Conquiste sua vaga</h3>
+
+<p>
+Prepare-se para entrevistas e inicie uma nova etapa da sua carreira.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="cta">
+
+<div class="container">
+
+<h2>
+
+Seu próximo emprego pode estar a um clique.
+
+</h2>
+
+<p>
+
+Milhares de empresas procuram talentos todos os dias.
+
+Não espere a oportunidade passar.
+
+</p>
+
+<a
+
+href="https://www.linkedin.com/jobs/"
+
+target="_blank"
+
+class="primary-button">
+
+Encontrar vagas agora
+
+<i class="fa-solid fa-arrow-right"></i>
+
+</a>
+
+</div>
+
+</section>
+
+<section id="faq">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>Perguntas Frequentes</span>
+
+<h2>Dúvidas comuns</h2>
+
+</div>
+
+<div class="faq">
+
+<div class="faq-item">
+
+<button class="faq-question">
+
+É gratuito utilizar?
+
+<i class="fa-solid fa-plus"></i>
+
+</button>
+
+<div class="faq-answer">
+
+<p>
+
+Sim. Você pode acessar as plataformas de emprego gratuitamente.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="faq-item">
+
+<button class="faq-question">
+
+Preciso criar conta?
+
+<i class="fa-solid fa-plus"></i>
+
+</button>
+
+<div class="faq-answer">
+
+<p>
+
+Depende da plataforma escolhida para candidatura.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="faq-item">
+
+<button class="faq-question">
+
+Posso procurar vagas remotas?
+
+<i class="fa-solid fa-plus"></i>
+
+</button>
+
+<div class="faq-answer">
+
+<p>
+
+Sim. Diversas oportunidades permitem trabalho remoto.
+
+</p>
+
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -312,17 +621,57 @@ Com apenas um clique você é direcionado para uma plataforma confiável com mil
 
 <footer>
 
-<h3>Novo Começo</h3>
+<div class="container footer-container">
+
+<div>
+
+<h2>Novo Começo</h2>
 
 <p>
-Incentivando novas oportunidades profissionais.
+
+Transformando oportunidades em novos começos.
+
 </p>
 
-<p style="margin-top:15px;">
-© 2026 Todos os direitos reservados.
+</div>
+
+<div>
+
+<h3>Navegação</h3>
+
+<a href="#inicio">Início</a>
+<a href="#sobre">Sobre</a>
+<a href="#vantagens">Vantagens</a>
+<a href="#faq">FAQ</a>
+
+</div>
+
+<div>
+
+<h3>Contato</h3>
+
+<p>contato@novocomeco.com</p>
+
+<p>Brasil</p>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+
+<p>
+
+© 2026 Novo Começo. Todos os direitos reservados.
+
 </p>
+
+</div>
 
 </footer>
 
+<script src="script.js"></script>
+
 </body>
+
 </html>
